@@ -1,5 +1,6 @@
 before_install:
   - whoami
+  - uname -a
   - cat /etc/sudoers
   - su -c "apt-get update"
   - su -c "apt-get install -y libssl-dev autoconf automake libtool"
