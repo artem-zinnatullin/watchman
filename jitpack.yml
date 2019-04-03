@@ -1,6 +1,6 @@
 before_install:
-  - sudo apt-get update
-  - sudo apt-get install -y libssl-dev autoconf automake libtool
+  - su -c "apt-get update"
+  - su -c "apt-get install -y libssl-dev autoconf automake libtool"
 
 install:
   - ./autogen.sh
