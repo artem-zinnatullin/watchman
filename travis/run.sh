@@ -47,10 +47,10 @@ make DESTDIR=$INST_TEST install
 find $INST_TEST
 
 mkdir -p archives
-pushd "archives" > /dev/null
-archive_name="$(uname -s)-$(uname -r)-$(uname -m)-${TRAVIS_PYTHON}-archive.tar.gz"
-tar -zcf "$archive_name" "$INST_TEST"
-echo "$archive_name"
+pushd "$INST_TEST" > /dev/null
+archive_name="archives/$(uname -s)-$(uname -r)-$(uname -m)-${TRAVIS_PYTHON}-archive.tar.gz"
+tar -zcf "$archive_name" .
 popd > /dev/null
+echo "$archive_name"
 
 exit 0
