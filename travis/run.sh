@@ -48,7 +48,7 @@ find $INST_TEST
 
 mkdir -p archives
 pushd "archives" > /dev/null
-archive_name="$(uname -s)-$(uname -r)-$(uname -m)-archive.tar.gz"
+archive_name="$(uname -s)-$(uname -r)-$(uname -m)-${TRAVIS_PYTHON}-archive.tar.gz"
 tar -zcf "$archive_name" "$INST_TEST"
 echo "$archive_name"
 popd > /dev/null
