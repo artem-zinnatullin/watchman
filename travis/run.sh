@@ -51,6 +51,7 @@ archive_name="$(pwd)/archives/$(uname -s)-$(uname -r)-$(uname -m)-${TRAVIS_PYTHO
 pushd "$INST_TEST" > /dev/null
 tar -zcf "$archive_name" .
 popd > /dev/null
-echo "$archive_name"
+
+ls -la archives/
 
 exit 0
