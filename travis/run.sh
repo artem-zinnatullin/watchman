@@ -46,5 +46,11 @@ fi
 make DESTDIR=$INST_TEST install
 find $INST_TEST
 
-exit 0
+mkdir -p archives
+pushd "archives" > /dev/null
+archive_name="$(uname -s)-$(uname -r)-$(uname -m)-archive.tar.gz"
+tar -zcf "$archive_name" "$INST_TEST"
+echo "$archive_name"
+popd > /dev/null
 
+exit 0
