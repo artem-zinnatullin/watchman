@@ -85,7 +85,9 @@ deploy:
   provider: releases
   api_key:
     secure: 4r0YdH+438rubwFLFXiKw6qUTx1A0O2pX48NUqoTRG0idIGxJiL/JNqFca42pCJQcynf6o/9Syx8x3DDNGeGXgPxufXLb3O/0dQNjvUreINHLOgmcCdVdzKvGVDzVOQMtMYnNXCarH+0gSwAAinnANrFVuvQksRPJflzWLq3DPBU4YvyTNTgqnQkcVchwm2SXX2uYnJ5+MbQHWFLtjPj1f2it8iAciYjGyLBAuSn2MYpybbaNrVD9QkN+crR8aA22gBT0qpk7Wlb6yXZeGpPTk79oKF6MmWHNtw5qDbDflAElJzSX0tT3FN39BlLdHV/vHNDSrOo+fSVVtxGMK2rbfTFYzX9eIxKKvpxD76OlasQUZpaepORu4LNE5jQUKO7BEAd35yZ25F+075EhY7SIyse/Tzn0N5JmiOqUeAlkAqv0R01v7Mup/keOG+1/eU24Bj7pccBUJCmY7uOIQOI3/uzjDR1j6GBFBMf+GfscHNisSu6dUvtOd8OniwlzJUNFfCQajb/cmBOO1I/bzFTCPZkeguayQxWGH5TO1zcd6cioBQN1s/r52/HIenKcQpW26vKLD7C1lNK9OhyahGr9OAjsKkVvIentMuoD1WMEn/2X0zZWSwLqgWnU81/okAKKjbiyYvhX+DCYyO4I2EL8qz6oH/B91dMuqxODG75HHQ=
+  file_glob: true
   file: archives/*
   on:
     repo: artem-zinnatullin/watchman
+    tags: true
 tags: true
