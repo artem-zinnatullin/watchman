@@ -54,10 +54,6 @@ addons:
 #      - ruby
 #      - rubygems
 
-branches:
-  only:
-    - master
-
 os: osx
 
 
